@@ -1,3 +1,11 @@
-<h1>Happy Cat</h1>
-<p>miaou</p>
-<p>waf</p>
+<h1><%= @name %></h1>
+<p><%= @surname %></p>
+<p><%= @description %></p>
+<p><%= @comment %></p>
+
+<h2>Ses curiosités</h2>
+
+<%@curiosities.each do |curiosities|%>
+    <p> - <%= curiosities%></p>
+    
+<% end %>
